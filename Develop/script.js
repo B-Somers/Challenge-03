@@ -1,8 +1,7 @@
-// Assignment code here
 
 var generateBtn = document.querySelector("#generate");
 
-// 
+
 function randomInt(min, max){
   if (!max) {
     max = min
@@ -11,7 +10,7 @@ function randomInt(min, max){
   var rand = Math.random()
   return Math.floor(min*(1 - rand) + rand*max)
 }
-//
+
 function getRandomItem(list){
   return list[randomInt(list.length)]
 }
@@ -60,7 +59,7 @@ function generatePassword() {
   if (optionsCart.length === 0 ){
     optionsCart.push(lowercaseList)
   }
-// this makes note of final password chosen
+// This makes note of final password chosen
   var generatedpassword = ""
 // this prints random charictors in group vs row by row 
   for (var i = 0; i < passwordLength; i++){
@@ -72,6 +71,10 @@ function generatePassword() {
   return generatedpassword
  
 }
+
+
+
+
 
 // Write password to the #password input
 function writePassword() {
